@@ -15,6 +15,10 @@
 		211DEEAB25A4763A0089B4B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211DEEA925A4763A0089B4B0 /* LaunchScreen.storyboard */; };
 		211DEEB625A4763A0089B4B0 /* SegmentControlandLoadindDataShimmerEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211DEEB525A4763A0089B4B0 /* SegmentControlandLoadindDataShimmerEffectTests.swift */; };
 		211DEEC125A4763A0089B4B0 /* SegmentControlandLoadindDataShimmerEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211DEEC025A4763A0089B4B0 /* SegmentControlandLoadindDataShimmerEffectUITests.swift */; };
+		211DEED325A476540089B4B0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211DEED125A476540089B4B0 /* TableViewCell.swift */; };
+		211DEED425A476540089B4B0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211DEED225A476540089B4B0 /* TableViewCell.xib */; };
+		211DEEF325A49DE60089B4B0 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211DEEF125A49DE60089B4B0 /* LoadingTableViewCell.swift */; };
+		211DEEF425A49DE60089B4B0 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211DEEF225A49DE60089B4B0 /* LoadingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		211DEEBC25A4763A0089B4B0 /* SegmentControlandLoadindDataShimmerEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentControlandLoadindDataShimmerEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211DEEC025A4763A0089B4B0 /* SegmentControlandLoadindDataShimmerEffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlandLoadindDataShimmerEffectUITests.swift; sourceTree = "<group>"; };
 		211DEEC225A4763A0089B4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211DEED125A476540089B4B0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		211DEED225A476540089B4B0 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		211DEEF125A49DE60089B4B0 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		211DEEF225A49DE60089B4B0 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				211DEEA725A4763A0089B4B0 /* Assets.xcassets */,
 				211DEEA925A4763A0089B4B0 /* LaunchScreen.storyboard */,
 				211DEEAC25A4763A0089B4B0 /* Info.plist */,
+				211DEED125A476540089B4B0 /* TableViewCell.swift */,
+				211DEED225A476540089B4B0 /* TableViewCell.xib */,
+				211DEEF125A49DE60089B4B0 /* LoadingTableViewCell.swift */,
+				211DEEF225A49DE60089B4B0 /* LoadingTableViewCell.xib */,
 			);
 			path = SegmentControlandLoadindDataShimmerEffect;
 			sourceTree = "<group>";
@@ -232,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				211DEEAB25A4763A0089B4B0 /* LaunchScreen.storyboard in Resources */,
+				211DEEF425A49DE60089B4B0 /* LoadingTableViewCell.xib in Resources */,
+				211DEED425A476540089B4B0 /* TableViewCell.xib in Resources */,
 				211DEEA825A4763A0089B4B0 /* Assets.xcassets in Resources */,
 				211DEEA625A476340089B4B0 /* Main.storyboard in Resources */,
 			);
@@ -258,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211DEEF325A49DE60089B4B0 /* LoadingTableViewCell.swift in Sources */,
 				211DEEA325A476340089B4B0 /* ViewController.swift in Sources */,
+				211DEED325A476540089B4B0 /* TableViewCell.swift in Sources */,
 				211DEE9F25A476340089B4B0 /* AppDelegate.swift in Sources */,
 				211DEEA125A476340089B4B0 /* SceneDelegate.swift in Sources */,
 			);
