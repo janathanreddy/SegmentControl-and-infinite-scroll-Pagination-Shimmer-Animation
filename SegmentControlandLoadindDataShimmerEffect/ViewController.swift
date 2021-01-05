@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
@@ -27,7 +28,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         countint = sender.selectedSegmentIndex
         tableView.reloadData()
     }
-  
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -37,6 +41,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
+
             let TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
             TableViewCell.LabelImage.text = data[countint][indexPath.row]
             return TableViewCell
@@ -60,6 +65,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.isLoading = false
         for i in 0...40 {
             data[countint].append(contentsOf: data[countint])
+
         }
         self.tableView.reloadData()
     }
@@ -89,6 +95,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
         if (offsetY > contentHeight - scrollView.frame.height * 4) && !isLoading {
             loadMoreData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let roatationTransForm = CATransform3DTranslate(CATransform3DIdentity, 0, 50, 0)
+        cell.layer.transform = roatationTransForm
+        UIView.animate(withDuration: 1.0){
+            cell.layer.transform = CATransform3DIdentity
         }
     }
 }

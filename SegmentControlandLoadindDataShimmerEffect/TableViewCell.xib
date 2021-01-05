@@ -24,6 +24,9 @@
                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
                 <constraints>
@@ -32,8 +35,14 @@
                     <constraint firstItem="22G-yI-f0q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="VEr-aP-eXs"/>
                     <constraint firstAttribute="trailing" secondItem="22G-yI-f0q" secondAttribute="trailing" constant="16" id="qUP-gT-JLu"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="LabelImage" destination="22G-yI-f0q" id="VvV-L8-hDR"/>
             </connections>
